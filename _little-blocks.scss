@@ -16,10 +16,6 @@
     justify-content: right;
 }
 
-#descriptionp p{
-    text-align: right;
-}
-
 .polaroid{
     background-color: $color-1;
     padding: 20px;
@@ -36,6 +32,17 @@
     width: fit-content;
 }
 
+.polaroid div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.polaroid_img{
+    height: 300px;
+    display: block;
+}
+
 .post-it{
     background-color: $color-3;
     padding: 20px;
@@ -46,13 +53,18 @@
 }
 
 .section-post-it{
-    display: flex;
-    flex-direction: column;
+    padding-bottom: 1px;
+    // display: flex;
+    // flex-direction: column;
 }
 
-.polaroid div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.section-projets{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
 }
 
+.section-projets>h2,h3{
+    margin: 0;
+}
