@@ -22,6 +22,11 @@ img{
     padding: 0;
 }
 
+.img-gif{
+    width: 100%;
+    height: auto;
+}
+
 header{
     width: 70%;
     margin: 0 auto;
@@ -161,7 +166,7 @@ a{
     // background-color: $color-ocre;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
 }
 
 .flex-vertical{
