@@ -27,11 +27,6 @@ img{
     height: auto;
 }
 
-header{
-    width: 70%;
-    margin: 0 auto;
-}
-
 main{
     background-color: $color-white;
     background-image: url(./assets/background_paper.jpg);
@@ -40,6 +35,12 @@ main{
     width: 75%;
     margin: 0 auto;
     border-radius: 2px;
+    min-height: 75vh;
+}
+
+header{
+    width: 70%;
+    margin: 0 auto;
 }
 
 footer{
@@ -47,6 +48,35 @@ footer{
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+nav{
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.button-nav{
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    gap: 10px;
+}
+
+.button-nav>li{
+    border-radius: 10px 10px 0 0;
+    list-style: none;
+    padding: 10px 25px;
+    margin: 0;
+    width: 13%;
+    text-align: center;
+    overflow: hidden;
+    
+    font-weight: bold;
+    font-size: 14px;
+
+    // margin-bottom: -5px;
 }
 
 h1{
@@ -88,34 +118,6 @@ h3{
 }
 .flex-container>div{
     width: 50%;
-}
-
-nav{
-    margin-top: 20px;
-    text-transform: uppercase;
-}
-
-.button-nav{
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-}
-
-.button-nav>li{
-    border-radius: 10px 10px 0 0;
-    list-style: none;
-    padding: 10px 25px;
-    margin: 0;
-    width: 13%;
-    text-align: center;
-    overflow: hidden;
-    
-    font-weight: bold;
-    font-size: 14px;
-
-    // margin-bottom: -5px;
 }
 
 a{
@@ -182,7 +184,54 @@ a{
     gap: 20px;
 }
 
-
 .CV{
     width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+    main{
+        width: 90%;
+        min-height: 80vh;
+    }
+    
+    header{
+        width: 100%;
+    }
+    
+    #profile{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .p_right{
+        margin-bottom: 20px;
+    }
+
+    .img_svg{
+        display: none;
+    }
+
+    .post-it{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .flex-container{
+        flex-direction: column;
+    }
+    .flex-container>div{
+        width: 100%;
+    }
+
+    .button-nav li{
+        padding: 15px 5px;
+        // font-size: 12px;
+        width: 100%;
+    }
+
+    .button-nav{
+        gap: 0px;
+    }
+
 }
