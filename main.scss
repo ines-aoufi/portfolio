@@ -31,6 +31,7 @@ main{
     background-color: $color-white;
     background-image: url(./assets/background_paper.jpg);
     background-size: cover;
+
     padding: 0;
     width: 75%;
     margin: 0 auto;
@@ -82,8 +83,15 @@ nav{
 h1{
     font-size: 40px;
     padding-top: 20px;
+    padding-left: 20px;
     padding-bottom: 20px;
     margin: 0;
+    
+    background-image: url(./assets/highlighter.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    overflow: visible;
 }
 
 h1,h2,h3,h4,h5{
@@ -159,6 +167,15 @@ a{
     width: fit-content;
 }
 
+.button-secondary{
+    display: block;
+    background-color: $color-1;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
 .p_right{
     text-align: right;
 }
@@ -188,7 +205,68 @@ a{
     width: 100%;
 }
 
-@media only screen and (max-width: 600px){
+.image-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.base-image {
+    display: block;
+}
+
+.overlay-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.overlay-img.show {
+    opacity: 1;
+}
+
+.absolute{
+    position: absolute;
+    width: 65px !important;
+}
+
+.img-absolute1{
+    top: 20%;
+    left: 40%;
+}
+
+.img-absolute2{
+    top: 50%;
+    left: 30%;
+}
+
+.img-absolute3{
+    bottom: 30%;
+    right: 30%;
+}
+
+.img-absolute4{
+    top: -30px;
+    right: 20%;
+}
+
+.img-absolute5{
+    top: 80px;
+    left: 10%;
+}
+
+.img-absolute6{
+    top: -40px;
+    left: 0%;
+}
+
+.parent-relative{
+    position: relative;
+}
+
+@media only screen and (max-width: 800px){
     main{
         width: 90%;
         min-height: 80vh;
@@ -234,4 +312,7 @@ a{
         gap: 0px;
     }
 
+    .absolute{
+        display: none;
+    }
 }

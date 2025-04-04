@@ -22,8 +22,13 @@
         </nav>
     </header>
     <main>
+        <img src="./assets/logos/figma.png" class="absolute img-absolute2" alt="">
+        <img src="./assets/logos/Vue.js.png" class="absolute img-absolute3" alt="">
         <div class="container">
-            <h1>PORTFOLIO</h1>
+            <div class="parent-relative">
+                <h1>PORTFOLIO</h1>
+                <img src="./assets/logos/vscode.png" class="absolute img-absolute1" alt="">
+            </div>
         </div>
         <section class="container flex-container" id="profile">
             <div id="description">
@@ -39,9 +44,14 @@
                     <p class="p_right">En recherche de stage et d’alternance</p>
                     <img class="img_svg" src="./assets/fleche3.svg" alt="">
                 </div>
+                
             </div>
             <div class="polaroid">
-                <img src="./assets/image_lis.jpg" alt="">
+                <div class="image-container" id="imageContainer">
+                    <img src="./assets/image_lis.jpg" class="base-img" alt="Dessin d'Inès sur le style de Life is Strange">
+                    <img src="./assets/photo_lis.jpg" class="overlay-img" alt="Photo d'Inès">
+                    
+                </div>
                 <h2>Inès AOUFI</h2>
                 <div>
                     <span class="material-symbols-outlined"> location_on </span>
@@ -65,6 +75,7 @@
                 <i class="fa-solid fa-envelope"></i>
                 <a href="mailto:inesaoufii@gmail.com"><b>inesaoufii@gmail.com</b></a>
             </div>
+            <script src="script.js"></script>
             <div class="flex-brands">
                 <a href="https://github.com/ines-aoufi"><i class="fa-brands fa-square-github"></i></a>
 
